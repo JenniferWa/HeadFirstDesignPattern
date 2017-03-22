@@ -13,8 +13,9 @@ public class Coffee extends CaffeineBeverage{
     public void brew() {
         System.out.println("Dripping Coffee through filter");
     }
+
     @Override
-    public void addCondiments() {
+    void addCondiment() {
         System.out.println("Adding Sugar and Milk");
     }
 }
