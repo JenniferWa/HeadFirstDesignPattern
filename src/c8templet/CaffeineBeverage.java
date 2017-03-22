@@ -10,15 +10,21 @@ public abstract class CaffeineBeverage {
     void prepareRecipe(){
         boilWater();
         brew();
-        addCondiment();
+        
         pourInCup();
+        if(customerWantsConiments()){
+            addCondiments();
+        }
     }
     abstract void brew();
-    abstract void addCondiment();
+    abstract void addCondiments();
     public void boilWater() {
         System.out.println("Boiling water");
     }
     public void pourInCup() {
         System.out.println("Pouring into cup");
+    }
+    boolean customerWantsConiments() {
+        return true;
     }
 }
