@@ -20,5 +20,10 @@ public class EnumerationIterator implements Iterator{
     public Object next() {
         return en.nextElement();
     }
+
+    @Override
+    public void remove() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
 }
